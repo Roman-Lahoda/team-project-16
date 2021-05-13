@@ -2,11 +2,18 @@
 @import "./base/fonts";
 @import "./base/conteiner";
 
-@import "./component/header";
-@import "./component/hero";
-@import "./component/about_us";
-@import "./component/program";
-@import "./component/reviews";
-@import "./component/registration";
-@import "./component/contact";
-@import "./component/footer";
+@import "./component/logo";
+@import "./component/button";
+@import "./component/mobile-menu";
+@import "./component/social-icons";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/about_us";
+@import "./layouts/program";
+@import "./layouts/reviews";
+@import "./layouts/registration";
+@import "./layouts/contact";
+@import "./layouts/footer";
+
+@import "./utils/variables";

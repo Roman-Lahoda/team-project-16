@@ -1,0 +1,21 @@
+.register__button {
+  margin: 0;
+  min-height: 40px;
+  min-width: 145px;
+  padding: 12px 47px 13px 46px;
+  border-radius: 25px;
+  border: none;
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 3.61em;
+  text-align: center;
+
+  color: #ffffff;
+  background-color: #ab816c;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #876655;
+  }
+}

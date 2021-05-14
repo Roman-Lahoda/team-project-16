@@ -1,0 +1,20 @@
+.heroTitle {
+  font-family: var(--second-font-family);
+  /*font-style: Regular;*/
+  font-size: 30px;
+  font-weight: var(--main-font-weight);
+  line-height: 1.26;
+
+  color: var(--main-text-color);
+  text-align: center;
+}
+
+.heroSubtitle {
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+
+  color: var(--main-text-color);
+  text-align: center;
+}

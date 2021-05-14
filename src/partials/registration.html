@@ -3,15 +3,17 @@
 
 <section class="registration">
   <h2 class="section-title">Registration</h2>
-  <p class="location">May 23, 11:00 New York</p>
-  <p class="cost">$ 699</p>
+  <p class="registration__location">May 23, 11:00 New York</p>
+  <p class="registration__cost">$ 699</p>
+  
     
-  <form class="registration-form" autocomplete="on" novalidate>
-      <div class="registration-container" role="group" aria-label="registration-form">
-          <input type="text" class="registration__input" id="name" name="name" pattern="^[A-Za-zA-Яа-яЁё\s]+$" placeholder="Your name" required>
-          <input type="tel" class="registration__input" id="tel" pattern="[0-9]{10}" placeholder="Phone number" required>
-          <input type="email" class="registration__input" id="email" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="Email" required>
-          <button type="submit" class="register__button">Register</button>
+  <form class="form" autocomplete="on" novalidate>
+    <p class="form__order">Apply your personal info for registration</p>
+      <div class="form__container" role="group" aria-label="registration-form">
+          <input type="text" class="form__input" id="name" name="name" pattern="^[A-Za-zA-Яа-яЁё\s]+$" placeholder="Your name" required>
+          <input type="tel" class="form__input" id="tel" pattern="[0-9]{10}" placeholder="Phone number" required>
+          <input type="email" class="form__input" id="email" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="Email" required> 
       </div>
+    <button type="submit" class="register__button">Register</button>
   </form>
 </section>

@@ -1,3 +1,16 @@
+.logo {
+  @media screen and (max-width: 767.98px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    margin-left: 0;
+    padding-top: 27px;
+  }
+}
+
 .nav__logo {
   width: 96px;
   height: 43px;
@@ -10,15 +23,13 @@
   }
 }
 
-.logo {
-  @media screen and (max-width: 767.98px) {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 7px;
-  }
+.logo--margin {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-    margin-left: 0;
-    padding-top: 27px;
-  }
+.mobile__logo {
+  width: 190px;
+  height: 85px;
+  margin-bottom: 40px;
 }

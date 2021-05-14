@@ -28,4 +28,10 @@
 
 .nav__link {
   color: var(--main-text-color);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--additional-color);
+  }
 }

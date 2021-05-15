@@ -1,21 +1,20 @@
 <!--Registration-->
 
-
-<section class="registration">
+<section class="registration container">
   <div class="registration__container">
       <div class="registration__head">
         <h2 class="section-title">Registration</h2> 
-        <p class="registration__location">May 23, 11:00 New York</p>
+        <p class="registration__location">May 23, 11:00 <br> New York</p>
         <p class="registration__cost">$ 699</p> 
       </div>
       <form class="form" autocomplete="on" novalidate>
-        <p class="form__order line">Apply your personal info </br> for registration</p>
+        <p class="form__order line">Apply your personal info <br> for registration</p>
         <div class="form__container" role="group" aria-label="registration-form">
           <input type="text" class="form__input" id="name" name="name" pattern="^[A-Za-zA-Яа-яЁё\s]+$" placeholder="Your name" required>
           <input type="tel" class="form__input" id="tel" pattern="[0-9]{10}" placeholder="Phone number" required>
           <input type="email" class="form__input" id="email" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="Email" required> 
-        </div>
-        <button type="submit" class="button button__register">Register</button>
+        </div> 
       </form>
+      <button type="submit" class="button button__register">Register</button>
   </div>     
 </section>

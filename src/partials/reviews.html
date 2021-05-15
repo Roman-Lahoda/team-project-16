@@ -1,17 +1,25 @@
 <section>
   <div class="container">
     <h2 class="title review-title">Reviews</h2>
-    <ul>
+    <ul class="list">
       <li>
         <article>
-          <picture class="review-photo photo--round-coners">
-            <!-- Добавить изображения под разные экраны -->
+          <picture class="review-photo photo--round-corners">
             <source
-              srcset="./images/reviews/john.png 1x, ./images/reviews/john@2x.png 2x"
+              srcset="
+                ./images/reviews/desktop/john_desktop.jpg    1x,
+                ./images/reviews/desktop/john@2x_desktop.jpg 2x
+              "
               media="(min-width:1280px)"
             />
-            <source srcset="./images/reviews/john.png 1x, ./images/reviews/john@2x.png 2x" />
-            <source srcset="./images/reviews/john.png 1x, ./images/reviews/john@2x.png 2x" />
+            <!-- Указан общий максимальный размер экрана для мобильного и планшета, так как для моб. версии нет фото -->
+            <source
+              srcset="
+                ./images/reviews/tablet/john_tablet.jpg    1x,
+                ./images/reviews/tablet/john@2x_tablet.jpg 2x
+              "
+              media="(max-width:1279px)"
+            />
             <img src="./images/reviews/john.png" alt="John" />
           </picture>
           <h3 class="title review__name review-four-stars">John</h3>
@@ -23,9 +31,29 @@
       </li>
       <li>
         <article>
-          <picture class="reviews__photo photo--round-coners">
+          <picture class="reviews__photo photo--round-corners">
             <!-- Добавить изображения под разные экраны -->
-            <source srcset="./images/reviews/will.png 1x, ./images/reviews/will@2x.png 2x" />
+            <source
+              srcset="
+                ./images/reviews/desktop/will_desktop.jpg    1x,
+                ./images/reviews/desktop/will@2x_desktop.jpg 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="
+                ./images/reviews/tablet/will_tablet.jpg    1x,
+                ./images/reviews/tablet/will@2x_tablet.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./images/reviews/mobile/will_mobile.jpg    1x,
+                ./images/reviews/mobile/will@2x_mobile.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
             <img src="./images/reviews/will.png" alt="Will" />
           </picture>
           <h3 class="title review__name review-five-stars">Will</h3>
@@ -39,10 +67,20 @@
       </li>
       <li>
         <article>
-          <picture class="reviews__photo photo--round-coners">
-            <!-- Добавить изображения под разные экраны -->
+          <picture class="reviews__photo photo--round-corners">
             <source
-              srcset="./images/reviews/elisabeth.png 1x, ./images/reviews/elisabeth@2x.png 2x"
+              srcset="
+                ./images/reviews/desktop/elisabeth_desktop.jpg    1x,
+                ./images/reviews/desktop/elisabeth@2x_desktop.jpg 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="
+                ./images/reviews/tablet/elisabeth_tablet.jpg    1x,
+                ./images/reviews/tablet/elisabeth@2x_tablet.jpg 2x
+              "
+              media="(max-width:1279px)"
             />
             <img src="./images/reviews/elisabeth.png" alt="Elisabeth" />
           </picture>
@@ -55,5 +93,8 @@
         </article>
       </li>
     </ul>
+    <div class="counter"></div>
+    <button class="paginate left"><i></i><i></i></button>
+    <button class="paginate right"><i></i><i></i></button>
   </div>
 </section>

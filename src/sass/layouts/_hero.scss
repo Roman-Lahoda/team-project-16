@@ -1,20 +1,102 @@
+//----------------------Mobile version----------------------
 .heroTitle {
   font-family: var(--second-font-family);
   /*font-style: Regular;*/
-  font-size: 30px;
   font-weight: var(--main-font-weight);
+  font-size: 30px;
   line-height: 1.26;
+  line-height: 100%;
 
   color: var(--main-text-color);
   text-align: center;
+
+  margin-bottom: 3px;
+}
+
+.heroTitle--wrapper {
+  max-width: 224px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
 }
 
 .heroSubtitle {
   font-family: var(--main-font-family);
   font-size: 16px;
-  font-weight: 500;
   line-height: 1.25;
+  line-height: 100%;
 
   color: var(--main-text-color);
   text-align: center;
+  margin-bottom: 37px;
+}
+.register-btm {
+  display: block;
+  font-family: var(--second-font-family);
+  /*font-style: Regular;*/
+  font-weight: var(--main-font-weight);
+  font-size: 18px;
+  line-height: 3.61;
+  line-height: 287%;
+
+  color: red;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.social-links-list {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+//----------------------Tablet version----------------------
+@media screen and (min-width: 768px) {
+  .heroTitle {
+    text-align: left;
+  }
+
+  .heroTitle--wrapper {
+    margin-right: auto;
+    margin-left: 0px;
+  }
+
+  .heroSubtitle {
+    text-align: left;
+  }
+
+  .register-btm {
+    text-align: left;
+  }
+
+  .social-links-list {
+    margin-right: auto;
+    margin-left: 0px;
+  }
+}
+
+// ----------------------Descktop version----------------------
+@media screen and (min-width: 1280px) {
+  .heroTitle {
+    font-size: 64px;
+    line-height: 1.01;
+    line-height: 81%;
+  }
+
+  .heroTitle--wrapper {
+    max-width: 490px;
+  }
+
+  .heroSubtitle {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .register-btm {
+    font-size: 24px;
+    line-height: 2.7;
+    line-height: 215%;
+
+    color: red;
+    margin-bottom: 65px;
+  }
 }

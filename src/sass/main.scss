@@ -1,6 +1,8 @@
-@import "./base/common";
-@import "./base/fonts";
-@import "./base/container";
+@import './base/common';
+@import './base/fonts';
+@import './base/container';
+@import './component/section-title';
+
 
 @import "./component/logo";
 @import "./component/button";
@@ -8,13 +10,13 @@
 @import "./component/social-icons";
 @import "./component/section-title";
 
-@import "./layouts/header";
-@import "./layouts/hero";
-@import "./layouts/about_us";
-@import "./layouts/program";
-@import "./layouts/reviews";
-@import "./layouts/registration";
-@import "./layouts/contact";
-@import "./layouts/footer";
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about_us';
+@import './layouts/program';
+@import './layouts/reviews';
+@import './layouts/registration';
+@import './layouts/contact';
+@import './layouts/footer';
 
-@import "./utils/variables";
+@import './utils/variables';

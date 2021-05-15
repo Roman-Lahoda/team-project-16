@@ -1,47 +1,59 @@
-<article>
-  <h1 class="title review-title">Reviews</h1>
-  <section title="section review-section">
-    <div class="wrapper wrapper--round-coners">
-      <picture class="review-photo">
-        <source srcset="./images/reviews/john.png 1x, ./images/reviews/john@2x.png 2x" />
-        <img src="./images/reviews/john.png" alt="John" />
-      </picture>
-    </div>
-
-    <h2 class="title review__name">John</h2>
-    <p class="review__text">
-      The course was fun, relaxing and a bit basic. None of the recipes looked complicated. The only
-      suggestion for improvement is to add some more interesting recipes.
-    </p>
-  </section>
-  <section title="section review-section">
-    <div class="wrapper wrapper--round-coners">
-      <picture class="reviews__photo">
-        <source srcset="./images/reviews/will.png 1x, ./images/reviews/will@2x.png 2x" />
-        <img src="./images/reviews/will.png" alt="Will" />
-      </picture>
-    </div>
-
-    <h2 class="title review__name">Will</h2>
-    <p class="review__text">
-      Last time I have visited a cooking course by Eva I was impressed with the way she explained
-      everything to people. You can be sure you will manage to cook a delicious dish even if it is
-      your first time in the kitchen! Thank you so much for the masterclass! Looking forward to the
-      next one and highly recommend it to everyone!
-    </p>
-  </section>
-  <section title="section review-section">
-    <div class="wrapper wrapper--round-coners">
-      <picture class="reviews__photo">
-        <source srcset="./images/reviews/elisabeth.png 1x, ./images/reviews/elisabeth@2x.png 2x" />
-        <img src="./images/reviews/elisabeth.png" alt="Elisabeth" />
-      </picture>
-    </div>
-    <h2 class="title review__name">Elisabeth</h2>
-    <p class="review__text">
-      The cooking course was everything and more then I thought it would be. I was always scared to
-      try to make apple pies but after this class I no longer have a fear of trying to do this on my
-      own. Thanks to Eva!
-    </p>
-  </section>
-</article>
+<section>
+  <div class="container">
+    <h2 class="title review-title">Reviews</h2>
+    <ul>
+      <li>
+        <article>
+          <picture class="review-photo photo--round-coners">
+            <!-- Добавить изображения под разные экраны -->
+            <source
+              srcset="./images/reviews/john.png 1x, ./images/reviews/john@2x.png 2x"
+              media="(min-width:1280px)"
+            />
+            <source srcset="./images/reviews/john.png 1x, ./images/reviews/john@2x.png 2x" />
+            <source srcset="./images/reviews/john.png 1x, ./images/reviews/john@2x.png 2x" />
+            <img src="./images/reviews/john.png" alt="John" />
+          </picture>
+          <h3 class="title review__name review-four-stars">John</h3>
+          <p class="review__text">
+            The course was fun, relaxing and a bit basic. None of the recipes looked complicated.
+            The only suggestion for improvement is to add some more interesting recipes.
+          </p>
+        </article>
+      </li>
+      <li>
+        <article>
+          <picture class="reviews__photo photo--round-coners">
+            <!-- Добавить изображения под разные экраны -->
+            <source srcset="./images/reviews/will.png 1x, ./images/reviews/will@2x.png 2x" />
+            <img src="./images/reviews/will.png" alt="Will" />
+          </picture>
+          <h3 class="title review__name review-five-stars">Will</h3>
+          <p class="review__text">
+            Last time I have visited a cooking course by Eva I was impressed with the way she
+            explained everything to people. You can be sure you will manage to cook a delicious dish
+            even if it is your first time in the kitchen! Thank you so much for the masterclass!
+            Looking forward to the next one and highly recommend it to everyone!
+          </p>
+        </article>
+      </li>
+      <li>
+        <article>
+          <picture class="reviews__photo photo--round-coners">
+            <!-- Добавить изображения под разные экраны -->
+            <source
+              srcset="./images/reviews/elisabeth.png 1x, ./images/reviews/elisabeth@2x.png 2x"
+            />
+            <img src="./images/reviews/elisabeth.png" alt="Elisabeth" />
+          </picture>
+          <h2 class="title review__name review-five-stars">Elisabeth</h2>
+          <p class="review__text">
+            The cooking course was everything and more then I thought it would be. I was always
+            scared to try to make apple pies but after this class I no longer have a fear of trying
+            to do this on my own. Thanks to Eva!
+          </p>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>

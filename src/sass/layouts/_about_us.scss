@@ -35,6 +35,7 @@
 .about__thumb {
   @media screen and(min-width: 768px) {
     display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -58,5 +59,42 @@
 
   @media screen and(min-width: 1280px) {
     width: 392px;
+  }
+}
+
+
+.script {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.about__thumb {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .about__description {
+    width: calc(100% / 2);
+  }
+
+  .picture_about {
+    position: absolute;
+    left: -70px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .picture_about {
+    left: -80px;
+    width: 400px;
+    height: auto;
+    bottom: -40px;
+  }
+}
+
+.about {
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
   }
 }

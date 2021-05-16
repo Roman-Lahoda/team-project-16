@@ -1,7 +1,7 @@
 <section id="about" class="about">
   <div class="container">
     <div class="about__thumb">
-      <picture>
+      <picture class="picture_about">
         <source
           srcset="/images/about_us/desktop_pic.png 1x, /images/about_us/desktop_pic@2x.png 2x"
           media="(min-width: 1280px)"
@@ -51,4 +51,23 @@
       </div>
     </div>
   </div>
+
+  <script class="script">
+    function myFunction() {
+      var dots = document.getElementById("space");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+
 </section>

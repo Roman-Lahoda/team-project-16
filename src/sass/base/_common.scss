@@ -5,6 +5,7 @@ html {
   *::after,
   *::before {
     box-sizing: inherit;
+    // outline: 1px solid red;
   }
   
   h1,
@@ -47,4 +48,58 @@ html {
     font-weight: var(--main-font-weight);
     line-height: var(--main-line-height);
     color: var(--main-text-color);
+  
+
+    
+  @media screen and (min-width: 1280px) {
+    background-image: 
+    url(../images/header_hero/desktop_donuts.png),
+    url(../images/header_hero/spoon.png),
+    url(./../images/bg_top_desktop.png);
+    // url(./../images/bg_bottom_desktop.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: 
+        url(../images/header_hero/desktop_donuts@2x.png),
+        url(../images/header_hero/spoon@2x.png),
+        url(./../images/bg_top_desktop@2x.png);
+        // url(./../images/bg_bottom_desktop@2x.png);
+      }
+    background-size: 720px, 100px, contain;
+    background-position:  top right,top 150px left 0, top, bottom;
+    background-repeat: no-repeat;
   }
+
+
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    background-image: 
+    url(../images/header_hero/tablet_donut.png),
+    url(./../images/bg_top_tablet.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: 
+        url(../images/header_hero/tablet_donut@2x.png),
+        url(./../images/bg_top_tablet@2x.png);
+      }
+    background-size: 400px, contain;
+    background-position: top 0 right 40%, top;
+    background-repeat: no-repeat;
+  }
+
+
+  @media screen and (max-width: 767.98px) {
+    background-image: 
+    url(./../images/header_hero/mobile_donut.png),
+    url(./../images/bg_top_mobile.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: 
+      url(./../images/header_hero/mobile_donut@2x.png),
+      url(./../images/bg_top_mobile@2x.png);
+    }
+    
+  }
+  background-size: 100px, contain;
+  background-position: top left, top;
+  background-repeat: no-repeat;
+
+}

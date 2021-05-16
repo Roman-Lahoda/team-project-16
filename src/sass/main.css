@@ -549,6 +549,7 @@ body {
 .contacts-link:hover .contacts-link__icon,
 .contacts-link:hover .contacts-link__icon {
   fill: var(--additional-color);
+
 }
 
 :root {
@@ -565,6 +566,7 @@ body {
   --light-color: #ffffff;
   /*цв.текста кнопки*/
   --light-background: #fffff9;
+
   --main-font-family: 'Montserrat', sans-serif;
   --second-font-family: 'Caveat Brush', sans-serif;
   --main-font-size: 18px;

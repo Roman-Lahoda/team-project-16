@@ -13,14 +13,16 @@
   }
 }
 
-footer.social-links-list {
-  padding: 34px 0;
+footer .social-links-list {
+  // padding: 34px 0;
+  margin-bottom: 30px;
 }
 
 .social-links-list--footer {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 
 .contacts {
@@ -57,6 +59,6 @@ footer.social-links-list {
 }
 
 .contacts-link:hover .contacts-link__icon,
-.contacts-link:hover .contacts-link__icon {
+.contacts-link:focus .contacts-link__icon {
   fill: var(--additional-color);
 }

@@ -13,6 +13,7 @@
   border: none;
   color: var(--light-color);
   background-color: var(--primary-color);
+  box-shadow: 0 3px #999;
   cursor: pointer;
 
   &:hover,
@@ -22,6 +23,8 @@
 
   &:active {
     background-color: var(--additional-color);
+    box-shadow: 0 2px #666;
+    transform: translateY(1px);
   }
 }
 

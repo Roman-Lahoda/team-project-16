@@ -1,8 +1,8 @@
-#more {
-  @media screen and(max-width: 1279px) {
-    display: none;
-  }
-}
+// #more {
+//   @media screen and(max-width: 1279px) {
+//     display: none;
+//   }
+// }
 
 .about__title {
   font-family: var(--second-font-family);
@@ -97,4 +97,27 @@
   @media screen and (min-width: 768px) {
     padding-top: 100px;
   }
+}
+
+.hidden {
+  @media screen and (max-width: 1279.98px) {
+    display: none;
+  }
+}
+
+.hidden.more {
+  display: inline;
+}
+
+
+.read-more-button .less {
+  display: none;
+}
+
+.read-more-button.is-open .less {
+  display: inline;
+}
+
+.read-more-button.is-open .read {
+  display: none;
 }

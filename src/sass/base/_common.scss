@@ -55,16 +55,16 @@ html {
     background-image: 
     url(../images/header_hero/desktop_donuts.png),
     url(../images/header_hero/spoon.png),
-    url(./../images/bg_top_desktop.png);
-    // url(./../images/bg_bottom_desktop.png);
+    url(./../images/bg_top_desktop.png),
+    url(./../images/bg_bottom_desktop.png);
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: 
         url(../images/header_hero/desktop_donuts@2x.png),
         url(../images/header_hero/spoon@2x.png),
-        url(./../images/bg_top_desktop@2x.png);
-        // url(./../images/bg_bottom_desktop@2x.png);
+        url(./../images/bg_top_desktop@2x.png),
+        url(./../images/bg_bottom_desktop@2x.png);
       }
-    background-size: 720px, 100px, contain;
+    background-size: 720px, 100px, contain, contain;
     background-position:  top right,top 150px left 0, top, bottom;
     background-repeat: no-repeat;
   }
@@ -73,15 +73,17 @@ html {
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     background-image: 
     url(../images/header_hero/tablet_donut.png),
-    url(./../images/bg_top_tablet.png);
+    url(./../images/bg_top_tablet.png),
+    url(./../images/bg_tablet_bottom.png);
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: 
         url(../images/header_hero/tablet_donut@2x.png),
-        url(./../images/bg_top_tablet@2x.png);
+        url(./../images/bg_top_tablet@2x.png),
+        url(./../images/bg_tablet_bottom@2x.png);
       }
-    background-size: 400px, contain;
-    background-position: top 0 right 40%, top;
+    background-size: 400px, contain, contain;
+    background-position: top 0 right 40%, top, bottom;
     background-repeat: no-repeat;
   }
 
@@ -89,17 +91,19 @@ html {
   @media screen and (max-width: 767.98px) {
     background-image: 
     url(./../images/header_hero/mobile_donut.png),
-    url(./../images/bg_top_mobile.png);
+    url(./../images/bg_top_mobile.png),
+    url(./../images/bg_mobile_bottom.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: 
       url(./../images/header_hero/mobile_donut@2x.png),
-      url(./../images/bg_top_mobile@2x.png);
+      url(./../images/bg_top_mobile@2x.png),
+      url(./../images/bg_mobile_bottom@2x.png);
     }
     
   }
-  background-size: 100px, contain;
-  background-position: top left, top;
+  background-size: 100px, contain, contain;
+  background-position: top left, top, bottom 200px left;
   background-repeat: no-repeat;
 
 }

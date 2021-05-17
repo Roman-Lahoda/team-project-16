@@ -156,9 +156,10 @@
     }
 
     &:invalid:not(:placeholder-shown) {
-      border-bottom: 1px solid rgb(248, 3, 3);
+      border-bottom: 1px solid rgba(248, 3, 3, 0.644);
 
       &:invalid + span::after {
+        position: absolute;
         content: '✘';
         color: rgb(241, 83, 83);
       }
@@ -168,7 +169,8 @@
       border-bottom: 1px solid rgb(61, 158, 61);
 
       &:valid + span::after {
-        content: ' ✓';
+        position: absolute;
+        content: '✓';
         color: green;
       }
     }

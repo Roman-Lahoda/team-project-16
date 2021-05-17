@@ -56,16 +56,18 @@ html {
     url(../images/header_hero/desktop_donuts.png),
     url(../images/header_hero/spoon.png),
     url(./../images/bg_top_desktop.png),
+    url(./../images/flour_desktop.png),
     url(./../images/bg_bottom_desktop.png);
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: 
         url(../images/header_hero/desktop_donuts@2x.png),
         url(../images/header_hero/spoon@2x.png),
         url(./../images/bg_top_desktop@2x.png),
+        url(./../images/flour_desktop@2x.png),
         url(./../images/bg_bottom_desktop@2x.png);
       }
-    background-size: 720px, 100px, contain, contain;
-    background-position:  top right,top 150px left 0, top, bottom;
+    background-size: 720px, 100px, contain, 350px, contain;
+    background-position:  top right,top 150px left 0, top, bottom 0 right 0, bottom;
     background-repeat: no-repeat;
   }
 
@@ -74,16 +76,18 @@ html {
     background-image: 
     url(../images/header_hero/tablet_donut.png),
     url(./../images/bg_top_tablet.png),
+    url(./../images/flour_tablet.png),
     url(./../images/bg_tablet_bottom.png);
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: 
         url(../images/header_hero/tablet_donut@2x.png),
         url(./../images/bg_top_tablet@2x.png),
+        url(./../images/flour_tablet@2x.png),
         url(./../images/bg_tablet_bottom@2x.png);
       }
-    background-size: 400px, contain, contain;
-    background-position: top 0 right 40%, top, bottom;
+    background-size: 400px, contain,200px, contain;
+    background-position: top 0 right 40%, top,bottom 0 right 0, bottom;
     background-repeat: no-repeat;
   }
 
@@ -92,17 +96,37 @@ html {
     background-image: 
     url(./../images/header_hero/mobile_donut.png),
     url(./../images/bg_top_mobile.png),
+    url(./../images/flour_mobile.png),
     url(./../images/bg_mobile_bottom.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: 
       url(./../images/header_hero/mobile_donut@2x.png),
       url(./../images/bg_top_mobile@2x.png),
+      url(./../images/flour_mobile@2x.png),
       url(./../images/bg_mobile_bottom@2x.png);
     }
     
   }
-  background-size: 100px, contain, contain;
-  background-position: top left, top, bottom 200px left;
+  background-size: 100px, contain,115px,  contain;
+  background-position: top left, top,bottom 0 right 0, bottom 200px left;
   background-repeat: no-repeat;
+}
+
+
+.common-bg {
+  margin: 0 auto;
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    background-image: url(./../images/confetti_desktop.png);
+    background-size: 500px;
+    background-position: top 100px right 50px;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    max-width: 768px;
+  }
+  // background-color: violet;
 }

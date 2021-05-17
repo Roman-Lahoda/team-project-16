@@ -1,13 +1,15 @@
 ;(() => {
-    const menuBtnRef = document.querySelector("[data-btn]")
-    const menuBtn2Ref = document.querySelector("[data-menu-button2]")
+    const BtnRef = document.querySelector("[data-btn]")
+    const Btn2Ref = document.querySelector("[data-btn2]")
     const mobileMenuRef = document.querySelector("[more]")
-    menuBtnRef.addEventListener("click", () => {
+    const mobileMenuRef2 = document.querySelector("[more2]")
+    BtnRef.addEventListener("click", () => {
       mobileMenuRef.classList.toggle("more")
-      menuBtnRef.classList.toggle("is-open")
+      BtnRef.classList.toggle("is-open")
     })
   
-    menuBtn2Ref.addEventListener("click", () => {
-      mobileMenuRef.classList.toggle("is-open")
+    Btn2Ref.addEventListener("click", () => {
+      mobileMenuRef2.classList.toggle("more")
+      Btn2Ref.classList.toggle("is-open")
     })
   })()

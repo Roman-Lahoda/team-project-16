@@ -10,13 +10,13 @@
   margin-bottom: 40px;
   margin-top: 10px;
   @media screen and(min-width:1280px) {
-    margin-top: 21px;
+    // margin-top: 21px;
   }
-  display: none;
+  // display: none;
 }
 
 .program__list {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .program__item:not(:last-child) {
   margin-bottom: 10px;

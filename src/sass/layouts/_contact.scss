@@ -36,17 +36,36 @@
   margin-right: auto;
   width: 100%;
   margin-bottom: 20px;
+
+  /*Change text in autofill textbox*/
+
+  input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+  }
 }
 
-.form__input {
+.form__input--contacts {
+  background-color: inherit;
   width: 100%;
   @media screen and (min-width: 320px) {
-    max-width: 265px;
+    min-width: 265px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 410px;
+    min-width: 410px;
   }
   @media screen and (min-width: 1280px) {
-    max-width: 430px;
+    min-width: 430px;
+  }
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  resize: none;
+  outline: none;
+  background-color: inherit;
+
+  &::placeholder {
+    color: rgba(171, 129, 108, 0.5);
   }
 }

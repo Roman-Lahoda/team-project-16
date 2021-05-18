@@ -1,10 +1,10 @@
 ;(() => {
   const menuBtnRef = document.querySelector("[data-menu-button]")
   const menuBtn2Ref = document.querySelector("[data-menu-button2]")
-  const menuBtn3Ref = document.querySelector("[item]")
-  const menuBtn4Ref = document.querySelector("[item2]")
-  const menuBtn5Ref = document.querySelector("[item3]")
-  const menuBtn6Ref = document.querySelector("[item4]")
+  const menuBtn3Ref = document.querySelector("[data-item]")
+  const menuBtn4Ref = document.querySelector("[data-item2]")
+  const menuBtn5Ref = document.querySelector("[data-item3]")
+  const menuBtn6Ref = document.querySelector("[data-item4]")
   const mobileMenuRef = document.querySelector("[data-menu]")
   menuBtnRef.addEventListener("click", menu);
   menuBtn2Ref.addEventListener("click", menu);

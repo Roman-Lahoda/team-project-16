@@ -42,10 +42,11 @@
 }
 
 .read-more-button {
+  display: block;
   cursor: pointer;
   font-family: var(--second-font-family);
   font-size: var(--main-font-size);
-  line-height: 1.61;
+  line-height: 3.61;
   text-align: center;
   color: var(--primary-color);
   background-color: transparent;

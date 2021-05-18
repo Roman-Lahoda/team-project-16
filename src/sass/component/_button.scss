@@ -9,6 +9,10 @@
   line-height: 2.5;
   text-align: center;
 
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
+
   border-radius: 25px;
   border: none;
   color: var(--light-color);
@@ -16,19 +20,26 @@
 
   cursor: pointer;
 
+  box-shadow: 0 0 rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.3),
+    0 0 1px 1px rgba(0, 1, 6, 0.1);
+  transition: 0.2s ease-in-out;
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
   }
 
   &:active {
+    top: 1px;
+    left: 1px;
     background-color: var(--additional-color);
-    box-shadow: 0 2px #8766559f;
-    transform: translateY(1px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset, 0 2px 3px rgba(0, 0, 0, 0.5) inset,
+      0 1px 1px rgba(255, 255, 255, 0.1);
   }
 }
 
 .read-more-button {
+  cursor: pointer;
   font-family: var(--second-font-family);
   font-size: var(--main-font-size);
   line-height: 1.61;
@@ -40,5 +51,14 @@
 
   @media screen and(min-width:1280px) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:active {
+    color: var(--additional-color);
   }
 }

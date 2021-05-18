@@ -107,8 +107,7 @@
 
   transition: transform 0.2s;
 
-  &:hover,
-  &:focus {
+  &:hover {
     transform: scale(0.9);
   }
 
@@ -144,6 +143,9 @@
 }
 .highlights__item:nth-child(even) {
   transform: translateY(25px);
+  &:hover {
+    transform: translateY(25px) scale(0.9);
+  }
 }
 .highlights__img {
   position: absolute;

@@ -32,12 +32,10 @@
   &:hover,
   &:focus,
   &:active {
-    color: var(--additional-color);
+    color: var(--accent-color);
   }
 }
 
 .container--header {
   position: relative;
 }
-
-

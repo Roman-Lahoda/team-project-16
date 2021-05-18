@@ -1,46 +1,47 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  // outline: 1px solid red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
-  *,
-  *::after,
-  *::before {
-    box-sizing: inherit;
-    // outline: 1px solid red;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
-  }
-  
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  address {
-    font-style: normal;
-  }
-  
-  .list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
-  
-  .link {
-    text-decoration: none;
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
-  }
+}
+
 
   body {
     font-family: var(--main-font-family);
@@ -113,16 +114,15 @@ html {
     url(./../images/bg_mobile_bottom.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: 
-      url(./../images/header_hero/mobile_donut@2x.png),
-      url(./../images/bg_top_mobile@2x.png),
-      url(./../images/flour_mobile@2x.png),
-      url(./../images/bg_mobile_bottom@2x.png);
+      background-image: url(./../images/header_hero/mobile_donut@2x.png),
+        url(./../images/bg_top_mobile@2x.png), url(./../images/flour_mobile@2x.png),
+        url(./../images/bg_mobile_bottom@2x.png);
     }
   background-repeat: no-repeat;
   }
   
 }
+
 
 
 @keyframes move-bg-desktop {
@@ -169,7 +169,7 @@ html {
     background-image: url(./../images/confetti_desktop.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(./../images/confetti_desktop@2x.png)
+      background-image: url(./../images/confetti_desktop@2x.png);
     }
     background-size: 500px;
     background-position: top 100px right 50px;
@@ -181,7 +181,7 @@ html {
     background-image: url(./../images/confetti_tablet.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(./../images/confetti_tablet@2x.png)
+      background-image: url(./../images/confetti_tablet@2x.png);
     }
     background-size: 200px;
     background-position: top 200px right 0;

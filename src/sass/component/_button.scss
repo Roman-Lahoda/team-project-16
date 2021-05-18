@@ -7,7 +7,14 @@
   font-size: var(--main-font-size);
   /*line-height: 3.61;*/
   line-height: 2.5;
+  line-height: 100%;
   text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    min-height: 45px;
+    min-width: 158px;
+  }
 
   border-radius: 25px;
   border: none;
@@ -16,20 +23,27 @@
 
   cursor: pointer;
 
+  box-shadow: 0 0 rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.3),
+    0 0 1px 1px rgba(0, 1, 6, 0.1);
+  transition: 0.2s ease-in-out;
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
   }
 
   &:active {
+    top: 1px;
+    left: 1px;
     background-color: var(--additional-color);
-    box-shadow: 0 2px #8766559f;
-    transform: translateY(1px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset, 0 2px 3px rgba(0, 0, 0, 0.5) inset,
+      0 1px 1px rgba(255, 255, 255, 0.1);
   }
 }
 
 .read-more-button {
   display: block;
+  cursor: pointer;
   font-family: var(--second-font-family);
   font-size: var(--main-font-size);
   line-height: 3.61;
@@ -41,5 +55,14 @@
 
   @media screen and(min-width:1280px) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:active {
+    color: var(--additional-color);
   }
 }

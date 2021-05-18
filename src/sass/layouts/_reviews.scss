@@ -50,6 +50,14 @@
   margin-bottom: 0.5em;
   border-radius: 50%;
   overflow: hidden;
+
+  transition: transform 0.2s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
   @media screen and (max-width: 768px) {
     max-width: 110px;
   }

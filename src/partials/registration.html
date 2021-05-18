@@ -20,11 +20,11 @@
       <form class="form" autocomplete="on">
         <div class="form__container reg-wrapp">
           <p class="form__order">Apply your personal info for registration</p>
-          <label for="name"><input type="text" class="form__input" id="name" name="name" pattern="^[A-Za-zA-Яа-яЁё\s]+$" placeholder="Your name" required><span class="form__validation"></span></label>
-          <label for="tel"><input type="tel" class="form__input" id="tel" name="tel" pattern="[0-9]{10}" placeholder="Phone number" required><span class="form__validation"></span></label>
-          <label for="email"><input type="email" class="form__input" id="email" name="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Email" required><span class="form__validation"></span></label>
+          <label for="name"><input type="text" class="form__input" id="name" name="name" pattern="^[A-Za-zA-Яа-яЁё\s]+$" placeholder="Your name" required><span></span></label>
+          <label for="tel"><input type="tel" class="form__input" id="tel" name="tel" pattern="[0-9]{10}" placeholder="Phone number" required><span></span></label>
+          <label><input type="email" class="form__input" name="email" autocomplete="on" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Email" required><span></span></label>
         </div> 
-        <button type="submit" class="button register__button">Register</button>
+        <button type="submit" class="button register__button" aria-label="send regist info">Register</button>
       </form>
     </div>
     

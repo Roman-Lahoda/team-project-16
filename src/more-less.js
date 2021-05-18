@@ -1,8 +1,8 @@
 ;(() => {
     const BtnRef = document.querySelector("[data-btn]")
     const Btn2Ref = document.querySelector("[data-btn2]")
-    const mobileMenuRef = document.querySelector("[more]")
-    const mobileMenuRef2 = document.querySelector("[more2]")
+    const mobileMenuRef = document.querySelector("[data-more]")
+    const mobileMenuRef2 = document.querySelector("[data-more2]")
     BtnRef.addEventListener("click", () => {
       mobileMenuRef.classList.toggle("more")
       BtnRef.classList.toggle("is-open")

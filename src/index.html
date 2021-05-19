@@ -35,7 +35,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $(".mobile-nav, .nav__menu").on("click","a", function (event) {
+        $(".mobile-nav, .nav__menu, .hero-section").on("click","a", function (event) {
             event.preventDefault();
             var id  = $(this).attr('href'),
                 top = $(id).offset().top;

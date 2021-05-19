@@ -22,6 +22,9 @@
   font-family: var(--main-font-family);
   font-weight: var(--main-font-weight);
   font-size: 16px;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
   line-height: 1.25;
   color: var(--main-text-color);
 }

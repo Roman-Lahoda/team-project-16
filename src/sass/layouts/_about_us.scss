@@ -1,15 +1,13 @@
-
 .about__title {
   font-family: var(--second-font-family);
   font-weight: var(--main-font-weight);
-
-  @media screen and (max-width: 1279.98px) {
-    font-size: 24px;
-  } 
-  
   line-height: 2.71;
   text-align: center;
   color: var(--main-text-color);
+
+  @media screen and (max-width: 1280px) {
+    font-size: 24px;
+  }
 
   @media screen and(min-width: 768px) {
     text-align: left;
@@ -22,15 +20,16 @@
   font-family: var(--main-font-family);
   font-weight: var(--main-font-weight);
   font-size: 16px;
-  @media screen and (min-width: 1280px) {
-    font-size: 18px;
-  }
   line-height: 1.25;
   color: var(--main-text-color);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
-.about__intro2,
-.about__intro31 {
+.about__intro2 {
   margin-top: 20px;
 }
 .about__intro3 {
@@ -41,35 +40,13 @@
 }
 
 .about__thumb {
+  position: relative;
+
   @media screen and(min-width: 768px) {
     display: flex;
     justify-content: flex-end;
   }
 }
-
-.about__image {
-  width: 100%;
-  height: auto;
-
-  @media screen and(min-width: 768px) {
-    margin-right: 24px;
-  }
-
-  @media screen and(min-width: 1280px) {
-    margin-right: 76px;
-  }
-}
-
-.about__description {
-  @media screen and(min-width: 768px) {
-    width: 336px;
-  }
-
-  @media screen and(min-width: 1280px) {
-    width: 392px;
-  }
-}
-
 
 .script {
   @media screen and (min-width: 1280px) {
@@ -77,23 +54,21 @@
   }
 }
 
-.about__thumb {
-  position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .about__description {
+.about__description {
+  @media screen and (min-width: 768px) {
     width: calc(100% / 2);
   }
+}
 
-  .picture_about {
+.picture_about {
+  @media screen and (min-width: 768px) {
     position: absolute;
-    left: -70px;
+    left: -50px;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .picture_about {
+.picture_about {
+  @media screen and (min-width: 1280px) {
     left: -80px;
     width: 400px;
     height: auto;
@@ -114,9 +89,9 @@
     max-height: 0px;
     overflow: hidden;
     transition-property: max-height;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
   }
   margin-top: 0;
 }
@@ -126,7 +101,6 @@
   max-height: 110px;
   margin-top: 20px;
 }
-
 
 .read-more-button .less {
   display: none;

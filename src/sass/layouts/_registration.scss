@@ -77,7 +77,7 @@
 }
 
 .registration__title {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
@@ -195,12 +195,12 @@
     display: none;
   }
   @media screen and (min-width: 768px) {
-    top: 15px;
-    left: 10px;
+    top: -5px;
+    left: -45px;
   }
   @media screen and (min-width: 1280px) {
-    top: 15px;
-    left: 80px;
+    top: -5px;
+    left: -125px;
   }
 
   animation: spin 5s linear infinite;

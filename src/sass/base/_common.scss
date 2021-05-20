@@ -50,8 +50,10 @@ address {
     line-height: var(--main-line-height);
     color: var(--main-text-color);
   
+  
         // desktop
     @media screen and (min-width: 1280px) {
+      background-color: #FFFFF9;
       animation-name: move-bg-desktop;
       animation-duration: 3s;
       animation-timing-function: ease-in-out;
@@ -127,36 +129,36 @@ address {
 
 @keyframes move-bg-desktop {
   0% {
-            background-size: 720px, 1px, 100% 1000px , 350px, 100% 1600px;
+            background-size: 720px, 1px, 100% 1000px , 350px, 100% 1450px;
             background-position:  top -2000px right -1500px,top 150px left -10000px, top -400px left 0, bottom 0 right 0, bottom;
   }
 
   100% {
-      background-size: 720px, 100px, 100% 1000px, 350px, 100% 1600px;
+      background-size: 720px, 100px, 100% 1100px, 350px, 100% 1450px;
       background-position:  top right,top 150px left 0, top, bottom 0 right 0, bottom;
   }
 }
 
 @keyframes move-bg-tablet {
   0% {
-      background-size: 200px, 100% 620px,200px, 100% 1200px;
+      background-size: 200px, 100% 620px,200px, 100% 1300px;
       background-position: top -1000px right 120%, top -200px left 0, bottom 0 right 0, bottom 60px left 0;
   }
 
   100% {
-        background-size: 400px, 100% 620px,200px, 100% 1200px;
+        background-size: 400px, 100% 620px,200px, 100% 1300px;
         background-position: top 0 right 40%, top, bottom 0 right 0, bottom 60px left 0;
   }
 }
 
 @keyframes move-bg-mobile {
   0% {
-      background-size: 100px, 100% 500px, 115px, 100% 1200px;
+      background-size: 100px, 100% 500px, 115px, 100% 1250px;
       background-position: top -100px left -100px , top -100px left 0, bottom 0 right 0, bottom 200px left;
   }
 
   100% {
-        background-size: 35vw , 100% 500px, 115px, 100% 1200px;
+        background-size: 35vw , 100% 500px, 115px, 100% 1250px;
         background-position: top 0 left 0, top 0 left 0, bottom 0 right 0, bottom 200px left;
   }
 }

@@ -32,7 +32,12 @@
 .about__intro2,
 .about__intro31 {
   margin-top: 20px;
+}
+.about__intro3 {
   margin-bottom: 20px;
+  @media screen and (min-width:1280px) {
+    margin-top: 20px;
+  }
 }
 
 .about__thumb {
@@ -113,11 +118,13 @@
   transition-timing-function: linear;
   transition-delay: 0;
   }
+  margin-top: 0;
 }
 
 .hidden.more {
   // display: inline;
   max-height: 110px;
+  margin-top: 20px;
 }
 
 

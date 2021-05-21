@@ -99,7 +99,7 @@ footer .social-links-list {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(233, 216, 159, 0.5);
+  background-color: rgba(243, 212, 108, 0.4);
   opacity: 1;
   visibility: visible;
   transition: opacity 1s;
@@ -111,12 +111,14 @@ footer .social-links-list {
 }
 .backdrop.hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
+  transition: transform 5s linear;
 }
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  transition: transform 5s linear;
   width: 1000px;
   height: 550px;
   background-color: #fff;
@@ -125,7 +127,6 @@ footer .social-links-list {
   overflow: hidden;
   padding: 10px;
   box-shadow: 0px 0px 11px 14px rgba(34, 60, 80, 0.2);
-  transition: transform 5s linear;
 }
 .modal-text {
   line-height: 2;

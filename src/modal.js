@@ -9,6 +9,6 @@
     //   const expanded = menuBtn2Ref.getAttribute("aria-expanded") === "true" || false
       document.body.classList.toggle("modal-open")
     //   menuBtn2Ref.setAttribute("aria-expanded", !expanded)
-      modalRef.classList.toggle("modal-is-open")
+      modalRef.classList.toggle("hidden")
     }
   })()

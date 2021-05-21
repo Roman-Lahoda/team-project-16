@@ -83,10 +83,10 @@ footer .social-links-list {
     display: none;
   }
 }
-.hidden {
+.backdrop.hidden {
   display: none;
 }
-.hidden.modal-is-open {
+.backdrop {
   display: block;
 }
 .modal-open {
@@ -95,21 +95,37 @@ footer .social-links-list {
 .backdrop {
   position: fixed;
   z-index: 100;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 0px 11px 14px rgba(34, 60, 80, 0.2);
-  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(192, 175, 120, 0.5);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s;
+}
+.backdrop.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.backdrop.hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
 }
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   width: 1000px;
   height: 550px;
   background-color: #fff;
-  position: relative;
   border: 2px solid rgb(221, 185, 88);
   border-radius: 10px;
   overflow: hidden;
   padding: 10px;
+  box-shadow: 0px 0px 11px 14px rgba(34, 60, 80, 0.2);
+  transition: transform 5s linear;
 }
 .modal-text {
   line-height: 2;

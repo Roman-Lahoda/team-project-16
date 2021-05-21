@@ -64,3 +64,102 @@ footer .social-links-list {
 .contacts-link:focus .contacts-link__icon {
   fill: var(--additional-color);
 }
+
+
+
+
+
+//    MODAL 
+
+
+.map-btn-desktop {
+  @media screen and (max-width: 1279.98px) {
+    display: none;
+  }
+  cursor: pointer;
+}
+.map-link-mob {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.backdrop.hidden {
+  display: none;
+}
+.backdrop {
+  display: block;
+}
+.modal-open {
+  overflow: hidden;
+}
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(233, 216, 159, 0.5);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s;
+}
+.backdrop.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.backdrop.hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 1000px;
+  height: 550px;
+  background-color: #fff;
+  border: 2px solid rgb(221, 185, 88);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0px 0px 11px 14px rgba(34, 60, 80, 0.2);
+  transition: transform 5s linear;
+}
+.modal-text {
+  line-height: 2;
+  margin-bottom: 10px;
+}
+.map {
+  display: block;
+  width: 90%;
+  height: 410px;
+  margin: 0 auto;
+}
+.modal-btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgb(236, 128, 128);
+  border-radius: 50%;
+  
+}
+.go-map {
+  padding: 20px;
+  background-color: #FEF3E4;
+  margin-top: 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: var(--main-text-color);
+}
+.link--map {
+  color: var(--main-text-color);
+  padding: 15px;
+}
+.icon-close-modal {
+  fill: #000;
+}

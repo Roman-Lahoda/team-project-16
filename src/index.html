@@ -48,7 +48,7 @@
     <script src="./modal.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $(".mobile-nav, .nav__menu, .hero-section, .home__link").on("click","a", function (event) {
+        $(".mobile-nav, .nav__menu, .hero-section, .header").on("click","a", function (event) {
             event.preventDefault();
             var id  = $(this).attr('href'),
                 top = $(id).offset().top;

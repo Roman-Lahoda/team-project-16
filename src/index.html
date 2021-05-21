@@ -59,7 +59,8 @@
     <!-- /jQuery Mask Plugin -->
     <script>
       $(function () {
-        $('.form__input--mask').mask('+38 (000) 000-00-00');
+        $('.form__input--mask').mask('+38 (000) 000-00-00',
+        { 'translation': { 0: { pattern: /[0-9*]/ } } });
       });
     </script>
   

@@ -54,6 +54,8 @@
   background-color: transparent;
   border: none;
   padding: 0 6px;
+  position: relative;
+  z-index: 100;
 
   @media screen and(min-width:1280px) {
     display: none;

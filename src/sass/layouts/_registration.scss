@@ -149,7 +149,8 @@
     }
   }
 
-  &__input {
+  &__input,
+  &__input--mask {
     border: none;
     border-bottom: 1px solid var(--primary-color);
     background-color: var(--light-background);

@@ -65,12 +65,7 @@ footer .social-links-list {
   fill: var(--additional-color);
 }
 
-
-
-
-
-//    MODAL 
-
+//    MODAL
 
 .map-btn-desktop {
   @media screen and (max-width: 1279.98px) {
@@ -99,12 +94,12 @@ footer .social-links-list {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(255, 234, 164, 0.4);
+
   opacity: 1;
   visibility: visible;
-  transition: opacity 1s;
-  
-  background-color: rgba(254, 243, 228, 0.9);
+  transition: opacity 0.7s easy-out 250ms;
+
+  background-color: rgba(254, 243, 228, 0.1);
   backdrop-filter: blur(4px);
 }
 .backdrop.hidden {
@@ -123,47 +118,69 @@ footer .social-links-list {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 5s linear;
   width: 1000px;
-  height: 550px;
-  background-color: #fff;
-  border: 2px solid rgb(221, 185, 88);
-  border-radius: 10px;
+  //height: 550px;
+  background-color: #e6d1b48a;
+  border: 3px solid var(--additional-color);
+  border-radius: 15px;
   overflow: hidden;
-  padding: 10px;
-  box-shadow: 0px 0px 11px 14px rgba(34, 60, 80, 0.2);
+  padding: 5px;
+  box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
 }
 .modal-text {
-  line-height: 2;
-  margin-bottom: 10px;
+  line-height: 2.5;
+  margin-bottom: 1px;
+  font-weight: 700;
+  color: var(--main-text-color);
 }
 .map {
   display: block;
-  width: 90%;
+  width: 93%;
   height: 410px;
   margin: 0 auto;
 }
+
 .modal-btn-close {
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 15px;
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background-color: rgb(236, 128, 128);
+  justify-content: center;
+  align-items: center;
+
   border-radius: 50%;
-  
+
+  background-color: #ab816cd0;
+
+  &:hover,
+  &:focus {
+    background-color: #ab816c;
+  }
 }
 .go-map {
-  padding: 20px;
-  background-color: #FEF3E4;
-  margin-top: 10px;
-  border-radius: 20px;
-  font-weight: 500;
-  color: var(--main-text-color);
+  //padding: 20px;
+  /*background-color: #fef3e4;*/
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 45%;
+
+  //border-radius: 20px;
+  //font-weight: 500;
+  /*color: var(--main-text-color);*/
 }
+
 .link--map {
-  color: var(--main-text-color);
-  padding: 15px;
+  color: var(--light-color);
+  //padding: 15px;
 }
+
 .icon-close-modal {
-  fill: #000;
+  fill: var(--light-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--additional-color);
+  }
 }

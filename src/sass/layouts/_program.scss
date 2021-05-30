@@ -72,7 +72,7 @@
   transform: translateY(42px);
 
   @media screen and(max-width:767.98px) {
-    width: 290px;
+    max-width: 290px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -206,8 +206,8 @@
 
 .program-wrapp__item:nth-child(2) {
   position: relative;
-  top: -50px;
-  right: -20px;
+  top: -30px;
+  right: -10px;
 }
 .program_btn {
   display: block;

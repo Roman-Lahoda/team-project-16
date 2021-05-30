@@ -1,34 +1,21 @@
-// We select the element we want to target
-var target = document.querySelector(".registration");
-
-
-var scrollToTopBtn = document.querySelector(".scrollup")
-var rootElement = document.documentElement
-
-// Next we want to create a function that will be called when that element is intersected
-function callback(entries, observer) {
-  // The callback will return an array of entries, even if you are only observing a single item
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Show button
-      scrollToTopBtn.classList.add("showBtn")
-    } else {
-      // Hide button
-      scrollToTopBtn.classList.remove("showBtn")
-    }
-  });
-}
-
-function scrollToTop() {
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth"
+$(function() {
+  // при нажатии на кнопку scrollup
+  $('.scrollup').click(function() {
+    // переместиться в верхнюю часть страницы
+    $("html, body").animate({
+      scrollTop:0
+    },1000);
   })
-}
-scrollToTopBtn.addEventListener("click", scrollToTop);
-    
-// Next we instantiate the observer with the function we created above. This takes an optional configuration
-// object that we will use in the other examples.
-let observer = new IntersectionObserver(callback);
-// Finally start observing the target element
-observer.observe(target);
+})
+// при прокрутке окна (window)
+$(window).scroll(function() {
+  // если пользователь прокрутил страницу более чем на 200px
+  if ($(this).scrollTop()>200) {
+    // то сделать кнопку scrollup видимой
+    $('.scrollup').fadeIn();
+  }
+  // иначе скрыть кнопку scrollup
+  else {
+    $('.scrollup').fadeOut();
+  }
+});
